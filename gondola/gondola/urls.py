@@ -19,5 +19,5 @@ from . import arduino
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^sendPrice/(?P<value>\d+)/(?P<price>\d+)/$', arduino.sendPrice, name='sendPrice'),
+    url(r'^sendPrice/(?P<value>[a-zA-Z]*\d+)/(?P<price>\d+)/$', arduino.sendPrice, name='sendPrice'),
 ]
